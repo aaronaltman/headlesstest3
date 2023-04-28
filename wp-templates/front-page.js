@@ -33,7 +33,9 @@ export default function Component() {
   return (
       <>
         <SEO title={siteTitle} description={siteDescription} />
+        <div className="container">
         <AaronBanner text="Welcome to my website!" buttonText="Learn More" />
+        </div>
         <Header
             title={siteTitle}
             description={siteDescription}
