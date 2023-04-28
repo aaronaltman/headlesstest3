@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: .5rem;
     background-color: green;
 }
 
@@ -11,22 +11,24 @@
     justify-content: flex-end; // Added
     flex-basis: 50%;
     color: #fff;
+    align-items:center;
 }
 
 .rightColumn {
     display: flex; // Added
     justify-content: flex-start; // Added
     flex-basis: 50%;
+    align-items:center;
 }
 
 .button {
     padding: 1rem 2rem;
-    margin-left: 1rem; // To create a little space between text and button
+    margin-left: .5rem; // To create a little space between text and button
     border: none;
     border-radius: 4px;
     background-color: #fff;
     color: #000;
-    font-size: 2rem;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
