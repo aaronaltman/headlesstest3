@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'next/image';
+import Image from 'next/image';
 
 import styles from './AaronHero.module.scss';
 
@@ -11,7 +11,7 @@ const AaronHero = () => {
                     <div className="col-md-6">
                         <div className={styles.image}>
                             <Image
-                                src="https://i0.wp.com/fixdappspeed.mystagingwebsite.com/wp-content/uploads/2022/09/phones-app-transparent-large.webp?w=972&ssl=1"
+                                src="/public/static/fixdapp-logo.webp"
                                 alt="Hero image"
                                 layout="responsive"
                                 width={600}
