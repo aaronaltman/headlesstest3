@@ -13,7 +13,7 @@ import {
   Header,
   Footer,
   Posts,
-  Testimonials,
+  Testimonials, AaronBanner,
 } from 'components';
 import { BlogInfoFragment } from 'fragments/GeneralSettings';
 
@@ -35,7 +35,7 @@ export default function Component() {
   return (
     <>
       <SEO title={siteTitle} description={siteDescription} />
-
+      <AaronBanner text="Welcome to my website!" buttonText="Learn More" />
       <Header
         title={siteTitle}
         description={siteDescription}
@@ -46,11 +46,13 @@ export default function Component() {
         <div className="container">
           <section className="hero text-center">
             <Heading className={styles.heading} level="h1">
-              Welcome to your Blueprint
+              Car Buying
+            </Heading>
+            <Heading className={styles.heading} level="h1">
+              Made Simple
             </Heading>
             <p className={styles.description}>
-              Achieve unprecedented performance with modern frameworks and the
-              world&apos;s #1 open source CMS in one powerful headless platform.{' '}
+              Looking for objective advice, expert info and helpful tools to answer your car questions?{' '}
             </p>
             <div className={styles.actions}>
               <Button styleType="secondary" href="/contact-us">
