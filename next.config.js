@@ -1,9 +1,7 @@
 const { withFaust, getWpHostname } = require('@faustwp/core');
 
-/**
- * @type {import('next').NextConfig}
- **/
-module.exports = withFaust({
+module.exports = {
+  compress: false,
   reactStrictMode: true,
   sassOptions: {
     includePaths: ['node_modules'],
@@ -15,4 +13,6 @@ module.exports = withFaust({
     locales: ['en'],
     defaultLocale: 'en',
   },
-});
+};
+
+module.exports = withFaust(module.exports);
