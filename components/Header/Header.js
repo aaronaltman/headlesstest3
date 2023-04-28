@@ -4,7 +4,7 @@ import { FaBars, FaSearch } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { NavigationMenu, SkipNavigationLink } from '../';
+import { NavigationMenu, SkipNavigationLink, AaronBanner } from '../';
 
 import styles from './Header.module.scss';
 let cx = classNames.bind(styles);
@@ -26,6 +26,7 @@ export default function Header({ className, menuItems }) {
   return (
     <header className={headerClasses}>
       <SkipNavigationLink />
+      <AaronBanner text="Welcome to my website!" buttonText="Learn More" />
       <div className="container">
         <div className={cx('bar')}>
           <div className={cx('logo')}>
