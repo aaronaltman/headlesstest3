@@ -1,4 +1,4 @@
-import AaronBanner from 'components/AaronBanner/AaronBanner.js';
+import AaronBanner from '/components/AaronBanner/AaronBanner.js';
 
 import Button from './Button';
 import ContentWrapper from './ContentWrapper';
@@ -28,6 +28,7 @@ import SearchRecommendations from './SearchRecommendations';
 
 
 export {
+  AaronBanner,
   Button,
   ContentWrapper,
   CTA,
@@ -53,5 +54,4 @@ export {
   SearchResults,
   SearchRecommendations,
   LoadingSearchResult,
-    AaronBanner,
 };
