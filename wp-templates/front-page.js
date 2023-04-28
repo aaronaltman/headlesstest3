@@ -4,7 +4,6 @@ import { useQuery, gql } from '@apollo/client';
 import { FaArrowRight } from 'react-icons/fa';
 import styles from 'styles/pages/_Home.module.scss';
 import {
-  EntryHeader,
   Main,
   Button,
   Heading,
@@ -33,11 +32,6 @@ export default function Component() {
   const primaryMenu = data?.headerMenuItems?.nodes ?? [];
   const footerMenu = data?.footerMenuItems?.nodes ?? [];
 
-  const mainBanner = {
-    sourceUrl: '/static/banner.jpeg',
-    mediaDetails: { width: 1200, height: 600 },
-    altText: 'Portfolio Banner',
-  };
   return (
     <>
       <SEO title={siteTitle} description={siteDescription} />
@@ -49,7 +43,6 @@ export default function Component() {
       />
 
       <Main className={styles.home}>
-        <EntryHeader image={mainBanner} />
         <div className="container">
           <section className="hero text-center">
             <Heading className={styles.heading} level="h1">
