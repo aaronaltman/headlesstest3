@@ -32,10 +32,10 @@ export default function Header({ className, menuItems }) {
             <Link href="/">
               <a title="Home">
                 <Image
-                  src="/logo.png"
-                  width={400}
-                  height={80}
-                  alt="Blueprint media logo"
+                  src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/fixdapp-logo.webp"
+                  width={300}
+                  height={96}
+                  alt="FixdappLogo"
                   layout="responsive"
                 />
               </a>

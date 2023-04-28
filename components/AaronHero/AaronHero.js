@@ -11,11 +11,11 @@ const AaronHero = () => {
                     <div className="col-md-6">
                         <div className={styles.image}>
                             <Image
-                                src="/public/static/fixdapp-logo.webp"
-                                alt="Hero image"
+                                src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/phones-app-transparent-large.webp"
+                                alt="Fixdapp way of fixing cars"
                                 layout="responsive"
-                                width={600}
-                                height={400}
+                                width={800}
+                                height={719}
                             />
                         </div>
                     </div>
