@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from 'components/AaronBanner/AaronBanner.module.css';
+import styles from 'components/AaronBanner/AaronBanner.module.scss';
 
 const AaronBanner = ({ text, buttonText }) => {
     return (
