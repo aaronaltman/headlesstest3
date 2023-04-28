@@ -1,3 +1,5 @@
+import AaronHero from 'components/AaronHero/AaronHero.js';
+
 import AaronBanner from '/components/AaronBanner/AaronBanner.js';
 
 import Button from './Button';
@@ -28,6 +30,7 @@ import SearchRecommendations from './SearchRecommendations';
 
 
 export {
+  AaronHero,
   AaronBanner,
   Button,
   ContentWrapper,

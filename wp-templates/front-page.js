@@ -11,7 +11,7 @@ import {
   Header,
   Footer,
   Posts,
-  Testimonials, AaronBanner,
+  Testimonials, AaronBanner,AaronHero,
 } from 'components';
 import { BlogInfoFragment } from 'fragments/GeneralSettings';
 
@@ -39,8 +39,8 @@ export default function Component() {
             description={siteDescription}
             menuItems={primaryMenu}
         />
-
-        <Main className={styles.home}>
+        <AaronHero />
+        <Main className={styles.home} style={{ paddingTop: '40px' }}>
           <div className="container">
             <section className="hero text-center">
               <Heading className={styles.heading} level="h1">
