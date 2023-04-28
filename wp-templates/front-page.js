@@ -1,13 +1,11 @@
 import * as MENUS from 'constants/menus';
 
 import { useQuery, gql } from '@apollo/client';
-import { FaArrowRight } from 'react-icons/fa';
 import styles from 'styles/pages/_Home.module.scss';
 import {
   Main,
   Button,
   Heading,
-  CTA,
   NavigationMenu,
   SEO,
   Header,
@@ -33,83 +31,55 @@ export default function Component() {
   const footerMenu = data?.footerMenuItems?.nodes ?? [];
 
   return (
-    <>
-      <SEO title={siteTitle} description={siteDescription} />
-      <AaronBanner text="Welcome to my website!" buttonText="Learn More" />
-      <Header
-        title={siteTitle}
-        description={siteDescription}
-        menuItems={primaryMenu}
-      />
+      <>
+        <SEO title={siteTitle} description={siteDescription} />
+        <AaronBanner text="Welcome to my website!" buttonText="Learn More" />
+        <Header
+            title={siteTitle}
+            description={siteDescription}
+            menuItems={primaryMenu}
+        />
 
-      <Main className={styles.home}>
-        <div className="container">
-          <section className="hero text-center">
-            <Heading className={styles.heading} level="h1">
-              Car Buying
-            </Heading>
-            <Heading className={styles.heading} level="h1">
-              Made Simple
-            </Heading>
-            <p className={styles.description}>
-              Looking for objective advice, expert info and helpful tools to answer your car questions?{' '}
-            </p>
-            <div className={styles.actions}>
-              <Button styleType="secondary" href="/contact-us">
-                GET STARTED
-              </Button>
-              <Button styleType="primary" href="/about">
-                LEARN MORE
-              </Button>
-            </div>
-          </section>
-          <section className="cta">
-            <CTA
-              Button={() => (
-                <Button href="/posts">
-                  Get Started <FaArrowRight style={{ marginLeft: `1rem` }} />
+        <Main className={styles.home}>
+          <div className="container">
+            <section className="hero text-center">
+              <Heading className={styles.heading} level="h1">
+                Car Buying
+              </Heading>
+              <Heading className={styles.heading} level="h1">
+                Made Simple
+              </Heading>
+              <p className={styles.description}>
+                Looking for objective advice, expert info and helpful tools to answer your car questions?{' '}
+              </p>
+              <div className={styles.actions}>
+                <Button styleType="secondary" href="/contact-us">
+                  GET STARTED
                 </Button>
-              )}
-            >
-              <span>
-                Learn about Core Web Vitals and how Atlas can help you reach
-                your most demanding speed and user experience requirements.
-              </span>
-            </CTA>
-          </section>
-          <section className={styles.posts}>
-            <Heading className={styles.heading} level="h2">
-              Latest Posts
-            </Heading>
-            <Posts posts={data.posts?.nodes} id="posts-list" />
-          </section>
-          <section className="cta">
-            <CTA
-              Button={() => (
-                <Button href="/posts">
-                  Get Started <FaArrowRight style={{ marginLeft: `1rem` }} />
+                <Button styleType="primary" href="/about">
+                  LEARN MORE
                 </Button>
-              )}
-            >
-              <span>
-                Learn about Core Web Vitals and how Atlas can help you reach
-                your most demanding speed and user experience requirements.
-              </span>
-            </CTA>
-          </section>
-          <section className={styles.testimonials}>
-            <Heading className={styles.heading} level="h2">
-              Testimonials
-            </Heading>
-            <p className={styles.description}>
-              Here are just a few of the nice things our customers have to say.
-            </p>
-            <Testimonials testimonials={data?.testimonials?.nodes} />
-          </section>
-        </div>
-      </Main>
-      <Footer menuItems={footerMenu} />
-    </>
+              </div>
+            </section>
+            <section className={styles.posts}>
+              <Heading className={styles.heading} level="h2">
+                Latest Posts
+              </Heading>
+              <Posts posts={data.posts?.nodes} id="posts-list" />
+            </section>
+            <section className={styles.testimonials}>
+              <Heading className={styles.heading} level="h2">
+                Testimonials
+              </Heading>
+              <p className={styles.description}>
+                Here are just a few of the nice things our customers have to say.
+              </p>
+              <Testimonials testimonials={data?.testimonials?.nodes} />
+            </section>
+          </div>
+        </Main>
+        <Footer menuItems={footerMenu} />
+      </>
   );
 }
 
