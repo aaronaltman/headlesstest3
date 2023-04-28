@@ -1,18 +1,19 @@
 import React from 'react';
-import 'components/AaronBanner/AaronBanner.module.css';
+import styles from 'components/AaronBanner/AaronBanner.module.css';
 
 const AaronBanner = ({ text, buttonText }) => {
     return (
-        <div className="aaron-banner">
-            <div className="left-column">
+        <div className={styles.aaronBanner}>
+            <div className={styles.leftColumn}>
                 <p>{text}</p>
             </div>
-            <div className="right-column">
-                <button>{buttonText}</button>
+            <div className={styles.rightColumn}>
+                <button className={styles.button}>{buttonText}</button>
             </div>
         </div>
     );
 };
 
 export default AaronBanner;
+
 
