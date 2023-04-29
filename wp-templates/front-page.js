@@ -11,7 +11,7 @@ import {
   Header,
   Footer,
   Posts,
-  Testimonials,AaronHero,
+  Testimonials, AaronHero, AaronBanner,
 } from 'components';
 import { BlogInfoFragment } from 'fragments/GeneralSettings';
 
@@ -33,6 +33,7 @@ export default function Component() {
   return (
       <>
         <SEO title={siteTitle} description={siteDescription} />
+        <AaronBanner text="Shop our Spring Sale!" buttonText="Save 67% Now" />
         <Header
             title={siteTitle}
             description={siteDescription}
