@@ -15,7 +15,6 @@ const AaronHero = () => {
                                 alt="Fixdapp way of fixing cars"
                                 width={972}
                                 height={874}
-                                layout="responsive"
                             />
                         </div>
                     </div>
