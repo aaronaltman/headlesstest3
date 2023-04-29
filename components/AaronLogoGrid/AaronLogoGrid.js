@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import 'components/AaronLogoGrid/AaronLogoGrid.module.scss';
 
 const AaronLogoGrid = () => {
     const images = [
@@ -15,7 +16,7 @@ const AaronLogoGrid = () => {
     ];
 
     return (
-        <div>
+        <div className="aaron-logo-grid">
             <div className="grid">
                 {images.map((src, index) => (
                     <div key={index} className="logo-wrapper">
@@ -28,3 +29,4 @@ const AaronLogoGrid = () => {
 };
 
 export default AaronLogoGrid;
+
