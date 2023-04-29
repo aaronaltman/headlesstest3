@@ -6,6 +6,7 @@
   justify-content: center;
   width: 100%;
   padding: 50px 0;
+  background-color: #e5eaf4;
 
   .container {
     max-width: 1200px;
@@ -23,6 +24,7 @@
       flex: 1;
       padding: 0 15px;
       box-sizing: border-box;
+      align-content: flex-end;
 
       .imageWrapper {
         width: 100%;
