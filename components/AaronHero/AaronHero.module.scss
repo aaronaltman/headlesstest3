@@ -71,15 +71,3 @@
   font-weight: bold;
   margin-bottom: 1rem;
 }
-
-// Responsive styles
-@media (max-width: $breakpoint-small) {
-  .row {
-    flex-direction: column;
-  }
-
-  .leftCol,
-  .rightCol {
-    width: 100%;
-  }
-}
