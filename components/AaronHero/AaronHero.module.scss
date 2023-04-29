@@ -71,3 +71,15 @@
   font-weight: bold;
   margin-bottom: 1rem;
 }
+
+// Updating the media query
+@media (max-width: $breakpoint-small) {
+  .row {
+    flex-direction: column;
+  }
+
+  .hero {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
