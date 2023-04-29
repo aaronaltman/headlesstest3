@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 import styles from './AaronHero.module.scss';
 
@@ -8,22 +7,14 @@ const AaronHero = () => {
         <section className={styles.hero}>
             <div className="container">
                 <div className="row">
-                    <div className={`${styles.leftCol} col-md-6`}>{/* Updated class name */}
-                        <div className={styles.image}>
-                            <Image
-                                src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/phones-app-transparent-large.webp"
-                                alt="Fixdapp way of fixing cars"
-                                layout="responsive"
-                                width={800}
-                                height={719}
-                            />
-                        </div>
+                    <div className={`${styles.leftCol} col-md-6`}>
+                        {/* Removed Image component */}
                     </div>
-                    <div className={`${styles.rightCol} col-md-6`}>{/* Updated class name */}
+                    <div className={`col-md-6`}>
                         <div className={styles.content}>
-                            <h1 className={styles.heading}>Welcome to my website!</h1>
+                            <h1 className={styles.heading}>Save money on vehicle repairs & car mechanic bills</h1>
                             <p className={styles.text}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, ante eu tristique pharetra, eros velit suscipit tortor, a porttitor ipsum turpis eu eros. Quisque vitae libero pharetra, congue sapien a, ultricies est. Fusce bibendum magna a risus eleifend interdum.
+                                The FIXD sensor and free app tells you why your check engine light is on to help you save time and money
                             </p>
                             <button className={styles.button}>Learn More</button>
                         </div>
