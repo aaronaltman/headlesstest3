@@ -2,6 +2,7 @@ import AaronHero from 'components/AaronHero/AaronHero.js';
 
 import AaronBanner from '/components/AaronBanner/AaronBanner.js';
 
+import AaronLogoGrid from "./AaronLogoGrid";
 import Button from './Button';
 import ContentWrapper from './ContentWrapper';
 import CTA from './CTA';
@@ -30,6 +31,7 @@ import SearchRecommendations from './SearchRecommendations';
 
 
 export {
+  AaronLogoGrid,
   AaronHero,
   AaronBanner,
   Button,

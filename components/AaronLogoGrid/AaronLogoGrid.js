@@ -3,15 +3,15 @@ import Image from 'next/image';
 
 const AaronLogoGrid = () => {
     const images = [
-        'https://example.com/a-logo.png',
-        'https://example.com/b-logo.png',
-        'https://example.com/c-logo.png',
-        'https://example.com/d-logo.png',
-        'https://example.com/e-logo.png',
-        'https://example.com/f-logo.png',
-        'https://example.com/g-logo.png',
-        'https://example.com/h-logo.png',
-        'https://example.com/i-logo.png',
+        'https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/acm-blueprint/media/365/ff21d357-e318-3c8e-8ff2-ca15dbd1fa76.jpg',
+        'https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/acm-blueprint/media/365/ff21d357-e318-3c8e-8ff2-ca15dbd1fa76.jpg',
+        'https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/acm-blueprint/media/365/ff21d357-e318-3c8e-8ff2-ca15dbd1fa76.jpg',
+        'https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/acm-blueprint/media/365/ff21d357-e318-3c8e-8ff2-ca15dbd1fa76.jpg',
+        'https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/acm-blueprint/media/365/ff21d357-e318-3c8e-8ff2-ca15dbd1fa76.jpg',
+        'https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/acm-blueprint/media/365/ff21d357-e318-3c8e-8ff2-ca15dbd1fa76.jpg',
+        'https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/acm-blueprint/media/365/ff21d357-e318-3c8e-8ff2-ca15dbd1fa76.jpg',
+        'https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/acm-blueprint/media/365/ff21d357-e318-3c8e-8ff2-ca15dbd1fa76.jpg',
+        'https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/acm-blueprint/media/365/ff21d357-e318-3c8e-8ff2-ca15dbd1fa76.jpg',
     ];
 
     return (
