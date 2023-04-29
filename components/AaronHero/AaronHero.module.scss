@@ -1,6 +1,6 @@
 .hero {
   background-color: #e5eaf4;
-  padding: 10px 0; // Changed padding for top and bottom
+  padding: 15px 0; // Changed padding for top and bottom
 
   .container {
     max-width: 1200px;
@@ -17,7 +17,12 @@
     flex: 1;
     padding: 0 20px;
     width: 50%;
-    align-content:center;
+  }
+
+  .rightCol {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .imageWrapper {
@@ -28,10 +33,6 @@
   }
 
   .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
     .heading {
       margin-bottom: 20px;
     }
@@ -54,6 +55,9 @@
         cursor: pointer;
         width: 228px; // Updated width
         height: 34px; // Updated height
+        line-height: 34px; // Added to vertically center text in the button
+        text-align: center; // Added to horizontally center text in the button
+        display: inline-block; // Added to apply the width and height properties
 
         &:hover {
           background-color: darken(#34a853, 10%); // Darken the green color on hover
