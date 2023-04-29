@@ -13,6 +13,8 @@ const AaronHero = () => {
                             <Image
                                 src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/phones-app-transparent-large.webp"
                                 alt="Fixdapp way of fixing cars"
+                                width={1600}
+                                height={900}
                                 layout="responsive"
                             />
                         </div>
