@@ -21,9 +21,12 @@ const AaronHero = () => {
                     </div>
                     <div className={styles.rightCol}>
                         <div className={styles.content}>
-                            <h1 className={styles.heading}>Welcome to my website!</h1>
                             <p className={styles.text}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, ante eu tristique pharetra, eros velit suscipit tortor, a porttitor ipsum turpis eu eros. Quisque vitae libero pharetra, congue sapien a, ultricies est. Fusce bibendum magna a risus eleifend interdum.
+                                YOUR POCKET CAR EXPERT
+                            </p>
+                            <h1 className={styles.heading}>Save money on vehicle repairs & car mechanic bills</h1>
+                            <p className={styles.text}>
+                                The FIXD sensor and free app tells you why your check engine light is on to help you save time and money
                             </p>
                             <button className={styles.button}>Learn More</button>
                         </div>
