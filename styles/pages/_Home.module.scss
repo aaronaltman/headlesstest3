@@ -1,5 +1,13 @@
 @import 'styles/Variables';
 
+// Add this new class in your _Home.module.scss file
+.divider {
+  background-color: #4caf50; // green color
+  height: 2px; // adjust the height as needed
+  width: 100px; // adjust the width as needed
+  margin: 1rem auto; // center the divider horizontally and add some margin
+}
+
 .home {
   section {
     margin-bottom: 8rem;

@@ -52,6 +52,7 @@ export default function Component() {
                 Looking for objective advice, expert info and helpful tools to answer your car questions?{' '}
               </p>
             </section>
+            <div className={styles.divider}></div>
             <section className={styles.posts}>
               <Heading className={styles.heading} level="h2">
                 OBD2 Codes
