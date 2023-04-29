@@ -1,14 +1,12 @@
+@import 'styles/Variables';
+
 .hero {
   background-color: #e5eaf4;
   padding: 15px 0;
 
   .container {
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 0 auto;
-  }
-  .heading h1{
-    font-size:17px;
-    line-height: 1.2rem;
   }
 
   .row {
@@ -39,6 +37,7 @@
   .content {
     .heading {
       margin-bottom: 20px;
+      font-size: 1.5rem; // Added font-size
     }
 
     .text {
@@ -46,7 +45,7 @@
     }
   }
 
-  .button { // Moved outside of the .buttons class
+  .button {
     margin-right: 10px;
     margin-bottom: 10px;
     padding: 10px 20px;
@@ -62,6 +61,21 @@
 
     &:hover {
       background-color: darken(#34a853, 10%);
+    }
+  }
+
+  @media (max-width: $breakpoint-medium) {
+    .leftCol,
+    .rightCol {
+      width: 100%; // Stacks the columns
+    }
+  }
+
+  @media (max-width: $breakpoint-small) {
+    .content {
+      .heading {
+        font-size: 1.2rem; // Smaller font-size for small screens
+      }
     }
   }
 }
