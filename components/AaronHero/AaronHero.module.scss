@@ -1,88 +1,78 @@
 @import 'styles/Variables';
 
 .hero {
-  background-color: #e5eaf4;
-  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.leftCol,
+.rightCol {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: auto;
+}
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.text {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+// Responsive styles
+@media (max-width: $breakpoint-small) {
   .row {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .leftCol,
   .rightCol {
-    flex: 1;
-    padding: 0 20px;
-    width: 50%;
-  }
-
-  .rightCol {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative; // Added position relative
-  }
-
-  .imageWrapper {
-    .image {
-      max-width: 100%;
-      height: auto;
-    }
-  }
-
-  .content {
-    position: absolute; // Added position absolute
-    top: 20%; // Added to raise the content by 20%
-
-    .heading {
-      margin-bottom: 20px;
-      font-size: 1.5rem;
-    }
-
-    .text {
-      margin-bottom: 20px;
-    }
-  }
-
-  .button {
-    margin-right: 10px;
-    margin-bottom: 10px;
-    padding: 0 20px; // Changed padding to only apply to left and right
-    background-color: #34a853;
-    color: #fff;
-    border: 1px solid #000; // Added a small black border
-    border-radius: 4px; // Added rounded corners
-    cursor: pointer;
-    width: 228px;
-    height: 34px;
-    line-height: 34px; // Adjusted to vertically center text in the button
-    text-align: center;
-    display: inline-block;
-    font-size: 1rem; // Adjust font size if necessary
-
-    &:hover {
-      background-color: darken(#34a853, 10%);
-    }
-  }
-
-
-  @media (max-width: $breakpoint-medium) {
-    .leftCol,
-    .rightCol {
-      width: 100%;
-    }
-  }
-
-  @media (max-width: $breakpoint-small) {
-    .content {
-      .heading {
-        font-size: 1.2rem;
-      }
-    }
+    width: 100%;
   }
 }
