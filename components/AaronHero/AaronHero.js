@@ -8,7 +8,7 @@ const AaronHero = () => {
         <section className={styles.hero}>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6">
+                    <div className={`${styles.leftCol} col-md-6`}>{/* Updated class name */}
                         <div className={styles.image}>
                             <Image
                                 src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/phones-app-transparent-large.webp"
@@ -19,7 +19,7 @@ const AaronHero = () => {
                             />
                         </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className={`${styles.rightCol} col-md-6`}>{/* Updated class name */}
                         <div className={styles.content}>
                             <h1 className={styles.heading}>Welcome to my website!</h1>
                             <p className={styles.text}>
