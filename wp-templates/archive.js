@@ -1,5 +1,6 @@
 import { gql, useQuery } from '@apollo/client';
 import { pageTitle } from 'utilities';
+import appConfig from 'app.config';
 
 import * as MENUS from '../constants/menus';
 import { BlogInfoFragment } from '../fragments/GeneralSettings';
@@ -12,9 +13,9 @@ import {
   NavigationMenu,
   Posts,
   FeaturedImage,
-  SEO,
+  SEO, AaronBanner,
 } from '../components';
-import appConfig from 'app.config';
+
 
 export default function Archive(props) {
   const { uri, name, __typename } = props.data.nodeByUri;
@@ -42,6 +43,7 @@ export default function Archive(props) {
         )}
         description={siteDescription}
       />
+      <AaronBanner text="Shop our Spring Sale!" buttonText="Save 67% Now" />
       <Header
         title={siteTitle}
         description={siteDescription}
