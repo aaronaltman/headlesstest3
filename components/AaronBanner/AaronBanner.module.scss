@@ -4,10 +4,10 @@
     align-items: center;
     height: 52px;
     padding: 0 1rem;
-    background-color: green;
-    position: sticky; // Make the banner sticky
-    top: 0; // Set the position of the banner at the top
-    z-index: 1000; // Ensures the banner stays above other elements when scrolling
+    background-color: #25a45c;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .leftColumn {
@@ -15,7 +15,7 @@
     justify-content: flex-end;
     flex-basis: 50%;
     color: #fff;
-    line-height: 52px;
+    line-height: 1.6; // Adjust the line-height
 }
 
 .rightColumn {
@@ -30,13 +30,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem 1rem;
-    margin-left: 20px; // Set distance between text and button to 20 pixels
-    border: 1px solid #000; // Add a small black border to the button
+    padding: 0.7rem 1rem; // Adjust the padding
+    margin-left: 20px;
+    border: 1px solid #000;
     border-radius: 4px;
     background-color: #fff;
     color: #000;
-    font-size: 1.2rem; // Increase the font size inside the button
+    font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
