@@ -18,17 +18,23 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    .leftCol,
+    .leftCol {
+      flex: 1;
+      padding: 0 15px;
+      box-sizing: border-box;
+      align-content: flex-start;
+
+      .imageWrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+    }
     .rightCol {
       flex: 1;
       padding: 0 15px;
       box-sizing: border-box;
       align-content: flex-end;
-
-      .imageWrapper {
-        width: 100%;
-        height: auto;
-      }
 
       .content {
         h1 {
@@ -45,7 +51,9 @@
           display: inline-block;
           padding: 12px 24px;
           font-size: 16px;
-          border: none;
+          font-weight: bold; // Added to make the text bold
+          border: 1px solid black; // Added for a small black border
+          border-radius: 5px; // Added for rounded corners
           cursor: pointer;
           background-color: green;
           color: #ffffff;
@@ -60,7 +68,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-small) {
   .hero {
     .row {
       .leftCol,
