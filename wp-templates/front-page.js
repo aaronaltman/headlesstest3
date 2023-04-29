@@ -54,18 +54,9 @@ export default function Component() {
             </section>
             <section className={styles.posts}>
               <Heading className={styles.heading} level="h2">
-                Latest Posts
+                OBD2 Codes
               </Heading>
               <Posts posts={data.posts?.nodes} id="posts-list" />
-            </section>
-            <section className={styles.testimonials}>
-              <Heading className={styles.heading} level="h2">
-                Testimonials
-              </Heading>
-              <p className={styles.description}>
-                Here are just a few of the nice things our customers have to say.
-              </p>
-              <Testimonials testimonials={data?.testimonials?.nodes} />
             </section>
           </div>
         </Main>
