@@ -11,7 +11,7 @@ import {
   Main,
   Posts,
   SEO,
-  NavigationMenu,
+  NavigationMenu, AaronBanner,
 } from 'components';
 import { getNextStaticProps } from '@faustwp/core';
 import { pageTitle } from 'utilities';
@@ -35,6 +35,7 @@ export default function Page() {
   return (
     <>
       <SEO title={pageTitle(data?.generalSettings)} />
+      <AaronBanner text="Shop our Spring Sale!" buttonText="Save 67% Now" />
 
       <Header menuItems={primaryMenu} />
 
