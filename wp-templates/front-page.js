@@ -14,6 +14,8 @@ import {
 } from 'components';
 import { BlogInfoFragment } from 'fragments/GeneralSettings';
 
+import AaronLogoGrid from "../components/AaronLogoGrid";
+
 const postsPerPage = 6;
 
 export default function Component() {
@@ -58,6 +60,9 @@ export default function Component() {
                 OBD2 Codes
               </Heading>
               <Posts posts={data.posts?.nodes} id="posts-list" />
+            </section>
+            <section>
+              <AaronLogoGrid />
             </section>
           </div>
         </Main>
