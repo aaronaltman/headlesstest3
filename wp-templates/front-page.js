@@ -4,7 +4,6 @@ import { useQuery, gql } from '@apollo/client';
 import styles from 'styles/pages/_Home.module.scss';
 import {
   Main,
-  Button,
   Heading,
   NavigationMenu,
   SEO,
@@ -52,14 +51,6 @@ export default function Component() {
               <p className={styles.description}>
                 Looking for objective advice, expert info and helpful tools to answer your car questions?{' '}
               </p>
-              <div className={styles.actions}>
-                <Button styleType="secondary" href="/contact-us">
-                  GET STARTED
-                </Button>
-                <Button styleType="primary" href="/about">
-                  LEARN MORE
-                </Button>
-              </div>
             </section>
             <section className={styles.posts}>
               <Heading className={styles.heading} level="h2">

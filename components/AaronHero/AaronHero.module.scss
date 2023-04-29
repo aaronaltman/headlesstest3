@@ -1,6 +1,6 @@
 .hero {
   background-color: #e5eaf4;
-  padding: 100px 0;
+  padding: 10px 0; // Changed padding for top and bottom
 
   .container {
     max-width: 1200px;
@@ -17,6 +17,7 @@
     flex: 1;
     padding: 0 20px;
     width: 50%;
+    align-content:center;
   }
 
   .imageWrapper {
@@ -47,15 +48,15 @@
         margin-right: 10px;
         margin-bottom: 10px;
         padding: 10px 20px;
-        background-color: #fff;
-        color: #333;
+        background-color: #34a853; // Changed to the same green as the AaronBanner
+        color: #fff;
         border: none;
         cursor: pointer;
-        width: 50%;
+        width: 228px; // Updated width
+        height: 34px; // Updated height
 
         &:hover {
-          background-color: #333;
-          color: #fff;
+          background-color: darken(#34a853, 10%); // Darken the green color on hover
         }
       }
     }
