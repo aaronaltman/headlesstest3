@@ -62,6 +62,9 @@ export default function Component() {
               <Posts posts={data.posts?.nodes} id="posts-list" />
             </section>
             <section>
+              <Heading className={styles.heading} level="h1">
+                As Seen On
+              </Heading>
               <AaronLogoGrid />
             </section>
           </div>
