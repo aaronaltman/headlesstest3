@@ -11,14 +11,17 @@
 .leftColumn {
     display: flex;
     justify-content: flex-end;
+    align-content:center;
     flex-basis: 50%;
     padding-top: 10px;
+    color: white;
 }
 
 .rightColumn {
     display: flex;
     justify-content: flex-start;
     flex-basis: 50%;
+    align-content:center;
 }
 
 .button {
