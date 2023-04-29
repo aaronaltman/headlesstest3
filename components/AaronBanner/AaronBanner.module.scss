@@ -1,8 +1,7 @@
 .aaronBanner {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 1% 0;
+    padding: .5% 0;
     background-color: #25a45c;
     position: sticky;
     top: 0;
@@ -13,8 +12,6 @@
     display: flex;
     justify-content: flex-end;
     flex-basis: 50%;
-    color: #fff;
-    line-height: 1.6; // Adjust the line-height
     padding-top: 10px;
 }
 

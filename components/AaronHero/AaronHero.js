@@ -14,8 +14,6 @@ const AaronHero = () => {
                                 src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/phones-app-transparent-large.webp"
                                 alt="Fixdapp way of fixing cars"
                                 layout="responsive"
-                                width={400}
-                                height={350}
                             />
                         </div>
                     </div>
