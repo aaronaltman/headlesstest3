@@ -25,7 +25,12 @@
 
       .imageWrapper {
         width: 100%;
-        height: auto;
+        height: 100%; // Change height to 100% for full size
+        img {
+          object-fit: cover; // Add this line to maintain image aspect ratio
+          width: 100%;
+          height: 100%;
+        }
       }
     }
     .rightCol {
@@ -49,9 +54,9 @@
           display: inline-block;
           padding: 12px 24px;
           font-size: 16px;
-          font-weight: bold; // Added to make the text bold
-          border: 1px solid black; // Added for a small black border
-          border-radius: 5px; // Added for rounded corners
+          font-weight: bold;
+          border: 1px solid black;
+          border-radius: 5px;
           cursor: pointer;
           background-color: green;
           color: #ffffff;
