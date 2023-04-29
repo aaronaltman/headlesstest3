@@ -5,6 +5,9 @@
     height: 52px;
     padding: 0 1rem;
     background-color: green;
+    position: sticky; // Make the banner sticky
+    top: 0; // Set the position of the banner at the top
+    z-index: 1000; // Ensures the banner stays above other elements when scrolling
 }
 
 .leftColumn {
@@ -22,18 +25,18 @@
 }
 
 .button {
-    width: 155px; // Set button width to 155 pixels
-    height: 32px; // Set button height to 32 pixels
-    display: flex; // Added for aligning text inside the button
-    align-items: center; // Align text vertically inside the button
-    justify-content: center; // Align text horizontally inside the button
+    width: 155px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.5rem 1rem;
-    margin-left: 1rem;
-    border: none;
+    margin-left: 20px; // Set distance between text and button to 20 pixels
+    border: 1px solid #000; // Add a small black border to the button
     border-radius: 4px;
     background-color: #fff;
     color: #000;
-    font-size: 1rem;
+    font-size: 1.2rem; // Increase the font size inside the button
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
