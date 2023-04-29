@@ -25,6 +25,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: relative; // Added position relative
   }
 
   .imageWrapper {
@@ -35,9 +36,12 @@
   }
 
   .content {
+    position: absolute; // Added position absolute
+    top: 20%; // Added to raise the content by 20%
+
     .heading {
       margin-bottom: 20px;
-      font-size: 1.5rem; // Added font-size
+      font-size: 1.5rem;
     }
 
     .text {
@@ -48,31 +52,36 @@
   .button {
     margin-right: 10px;
     margin-bottom: 10px;
+    padding: 0 20px; // Changed padding to only apply to left and right
     background-color: #34a853;
     color: #fff;
-    border: none;
+    border: 1px solid #000; // Added a small black border
+    border-radius: 4px; // Added rounded corners
     cursor: pointer;
     width: 228px;
     height: 34px;
+    line-height: 34px; // Adjusted to vertically center text in the button
     text-align: center;
     display: inline-block;
+    font-size: 1rem; // Adjust font size if necessary
 
     &:hover {
       background-color: darken(#34a853, 10%);
     }
   }
 
+
   @media (max-width: $breakpoint-medium) {
     .leftCol,
     .rightCol {
-      width: 100%; // Stacks the columns
+      width: 100%;
     }
   }
 
   @media (max-width: $breakpoint-small) {
     .content {
       .heading {
-        font-size: 1.2rem; // Smaller font-size for small screens
+        font-size: 1.2rem;
       }
     }
   }
