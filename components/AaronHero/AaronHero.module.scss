@@ -3,91 +3,68 @@
 .hero {
   display: flex;
   align-items: center;
-  padding: 5% 0;
-  background-color: #e5eaf4;
-}
-
-.content h1{
-  font-size:25px;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.leftCol,
-.rightCol {
-  flex: 1;
-  display: flex;
   justify-content: center;
-  flex-direction: column;
-  padding: 2rem;
-}
+  width: 100%;
+  padding: 50px 0;
 
-.imageWrapper {
-  display: flex;
-}
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 
-.imageWrapper img {
-  max-width: 100%;
-  height: auto;
-}
-
-.heading {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.button {
-  background-color: #4caf50;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-  font-size: 1.5rem;
-  padding: 0.8rem 1.5rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  transition-duration: 0.4s;
-}
-
-.button:hover {
-  background-color: #45a049;
-}
-
-.text {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-// Updating the media query
-@media (max-width: $breakpoint-small) {
   .row {
-    flex-direction: column;
-  }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+    .leftCol,
+    .rightCol {
+      flex: 1;
+      padding: 0 15px;
+      box-sizing: border-box;
+
+      .imageWrapper {
+        width: 100%;
+      }
+
+      .content {
+        h1 {
+          font-size: 36px;
+          margin-bottom: 15px;
+        }
+
+        .text {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+
+        .button {
+          display: inline-block;
+          padding: 12px 24px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+          background-color: #f5a623;
+          color: #ffffff;
+          transition: background-color 0.3s;
+        }
+
+        .button:hover {
+          background-color: #d9860a;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
   .hero {
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-
-  .imageWrapper img {
-    max-width: 90%;
-    height: auto;
-  }
-
-  .heading {
-    font-size: 2rem;
+    .row {
+      .leftCol,
+      .rightCol {
+        flex: 100%;
+      }
+    }
   }
 }
