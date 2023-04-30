@@ -25,6 +25,8 @@
 
 // Define the base column style
 .column {
+  display: flex;
+  flex-direction: column;
   flex-basis: 100%;
   padding: 3rem 0;
 
@@ -41,19 +43,19 @@
 
 // Style for the first column, aligning the logo to flex-start
 .column1 {
-  display: flex;
-  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+// Style for columns 2, 3, and 4, aligning the items centered
+.column2,
+.column3,
+.column4 {
   align-items: center;
 }
 
-// Style for the other columns, aligning the items vertically
-.column2,
-.column3,
-.column4,
+// Style for the last column, aligning the items to flex-end
 .column5 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 // Style for h2 elements in the footer
