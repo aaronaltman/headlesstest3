@@ -4,31 +4,21 @@
 // Set the container width
 .container {
   width: 100%;
+
+  // Add some spacing around the elements in the footer
+  padding: 2rem;
 }
 
 // Set the column widths
-.column1,
-.column2,
-.column3,
-.column4,
-.column5 {
+.column1, .column2, .column3, .column4, .column5 {
   flex: 25%;
 }
 
 // Make the columns responsive
 @media (max-width: $breakpoint-medium) {
-  .column1,
-  .column2,
-  .column3,
-  .column4,
-  .column5 {
+  .column1, .column2, .column3, .column4, .column5 {
     flex: 100%;
   }
-}
-
-// Add some spacing around the elements in the footer
-.container {
-  padding: 2rem;
 }
 
 // Style the logo
