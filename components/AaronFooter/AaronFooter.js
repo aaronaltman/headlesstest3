@@ -37,9 +37,11 @@ function AaronFooter() {
             </div>
             <div className={styles.column3}>
                 <h2>Contact Us</h2>
-                <p>(925) 854-1766</p>
-                <p>support@fixdapp.com</p>
-                <p>999 Peachtree St NE Suite 840, Atlanta, GA 30309</p>
+                <ul>
+                <li>(925) 854-1766</li>
+                <li>support@fixdapp.com</li>
+                <li>999 Peachtree St NE Suite 840, Atlanta, GA 30309</li>
+                </ul>
             </div>
             <div className={styles.column4}>
                 <h2>Help</h2>
