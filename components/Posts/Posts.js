@@ -50,12 +50,18 @@ function Posts({ posts, intro, id }) {
                                         />
                                     </a>
                                 </Link>
+                                {/* Add the post title here */}
+                                <h3 className={cx('post-title')}>
+                                    <Link href={post?.uri ?? '#'}>
+                                        <a>{post?.title ?? 'Untitled'}</a>
+                                    </Link>
+                                </h3>
                             </div>
                         </div>
                     );
                 })}
-                {posts && posts?.length < 1 && <p>No posts found.</p>}
             </div>
+            {posts && posts?.length < 1 && <p>No posts found.</p>}
         </section>
     );
 }
