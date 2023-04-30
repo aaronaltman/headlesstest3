@@ -57,7 +57,7 @@ export default function Component() {
             <div className={styles.divider}></div>
           </section>
             <section>
-              <p>
+              <p className={styles.description}>
                 Turn to your Car FIXD experts.
               </p>
             </section>
