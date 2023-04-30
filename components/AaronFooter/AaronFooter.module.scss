@@ -1,60 +1,78 @@
 // Import variables
 @import "styles/_Variables.scss";
 
+// Set footer background color, full width, and padding
+.footer {
+  width: 100%;
+  background-color: #e5eaf5;
+  padding: 2.5rem 0; // 40px of padding on top and bottom in rem
+}
+
 // Set the container width and center the content
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  background-color: #e5eaf5;
 }
 
+// Create a row layout with flex and enable wrapping
 .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2rem; // Set gap between columns
 }
 
+// Define the base column style
 .column {
   flex-basis: 100%;
   padding: 3rem 0;
 
+  // Adjust column width for small breakpoint
   @media (min-width: $breakpoint-small) {
     flex-basis: 50%;
   }
 
+  // Adjust column width for medium breakpoint
   @media (min-width: $breakpoint-medium) {
     flex-basis: 25%;
   }
 }
 
+// Style for the first column, aligning the logo to flex-start
 .column1 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
+// Style for the other columns, aligning the items vertically
 .column2,
 .column3,
 .column4,
 .column5 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
+// Style for h2 elements in the footer
 .local_h2 {
   font-size: 18px;
 }
+
+// Style for li elements in the footer
 .local_li {
   font-size: 12px;
 }
 
+// Style for ul elements in the footer, removing text decoration
 .local_ul {
   text-decoration: none;
 }
+
+// Style for the logo, setting its dimensions
 .logo {
-  width: 300px;
-  height: 96px;
+  width: 150px;
+  height: 48px;
 }
