@@ -35,8 +35,8 @@
   margin-bottom: 1rem;
   padding: 0 2rem;
   text-align: left;
-  font-weight: bold; // Added bold style to titles
-  font-size: 1.4rem; // Increased the font size of titles
+  font-weight: bold;
+  font-size: 1.4rem;
 
   a:hover,
   a:focus {
@@ -48,10 +48,11 @@
   width: 100%;
   margin: 0;
   height: auto;
-  object-fit: cover; // Added to ensure consistent aspect ratio for images
+  object-fit: cover;
 }
 
 .image-holder {
+  border: none; // Add this line to remove any border around the images
   margin-bottom: -9rem;
 
   @media (min-width: $breakpoint-small) {
