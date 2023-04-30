@@ -1,3 +1,5 @@
+@import "styles/_Variables.scss";
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -52,18 +54,18 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: $breakpoint-medium) {
   .column1,
   .column2,
   .column3,
   .column4,
   .column5 {
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: $breakpoint-small) {
   .column1,
   .column2,
   .column3,
