@@ -6,46 +6,33 @@
   width: 100%;
   margin: 0 auto;
   padding: 2rem;
+  background-color: gray;
+}
+.column1{
+  flex-basis:20%;
+}
+.column2{
+  flex-basis:20%;
+}
+.column3{
+  flex-basis:20%;
+}
+.column4{
+  flex-basis:20%;
+}
+.column5{
+  flex-basis:20%;
 }
 
-// Set the column widths and add some spacing between them
-.column {
-  flex-basis: 20%;
-  margin-right: 1rem;
-  &:last-child {
-    margin-right: 0;
-  }
+.local_h2{
+  font-size: 18px;
+}
+.local_li{
+  font-size: 12px;
 }
 
-// Make the columns responsive
-@media (max-width: 768px) {
-  .column {
-    flex-basis: 100%;
-    margin-right: 0;
-    margin-bottom: 1rem;
-  }
+.local_ul{
+  text-decoration: none;
 }
 
-// Style the logo
-.logo {
-  max-height: 50px;
-}
 
-// Style the h2 elements
-.local_h2 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-// Style the ul elements
-.local_ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 1.5rem;
-  line-height: 1.5;
-
-  li {
-    margin-bottom: 0.5rem;
-  }
-}

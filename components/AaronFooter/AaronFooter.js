@@ -9,7 +9,7 @@ let cx = classNames.bind(styles);
 function AaronFooter() {
     return (
         <div className={styles.container}>
-            <div className={"column1"}>
+            <div className={styles.column1}>
                 <div className={cx('logo-container')}>
                     <div className={cx('logo')}>
                         <Link href="/">
@@ -26,7 +26,7 @@ function AaronFooter() {
                     </div>
                 </div>
             </div>
-            <div className={"column2"}>
+            <div className={styles.column2}>
                 <h2 className={styles.local_h2}>About</h2>
                 <ul className={styles.local_ul}>
                     <li className={styles.local_li}>About FIXD</li>
@@ -35,7 +35,7 @@ function AaronFooter() {
                     <li className={styles.local_li}>Reviews</li>
                 </ul>
             </div>
-            <div className={"column3"}>
+            <div className={styles.column3}>
                 <h2 className={styles.local_h2}>Contact Us</h2>
                 <ul className={styles.local_ul}>
                     <li className={styles.local_li}>(925) 854-1766</li>
@@ -43,7 +43,7 @@ function AaronFooter() {
                     <li className={styles.local_li}>999 Peachtree St NE Suite 840, Atlanta, GA 30309</li>
                 </ul>
             </div>
-            <div className={"column4"}>
+            <div className={styles.column4}>
                 <h2 className={styles.local_h2}>Help</h2>
                 <ul className={styles.local_ul}>
                     <li className={styles.local_li}>Help Center</li>
