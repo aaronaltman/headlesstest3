@@ -10,7 +10,7 @@ import {
   ContentWrapper,
   FeaturedImage,
   SEO,
-  TaxonomyTerms,
+  TaxonomyTerms, AaronBanner,
 } from 'components';
 import { pageTitle } from 'utilities';
 import { BlogInfoFragment } from 'fragments/GeneralSettings';
@@ -38,6 +38,7 @@ export default function Component(props) {
         description={siteDescription}
         imageUrl={featuredImage?.node?.sourceUrl}
       />
+      <AaronBanner text="Shop our Spring Sale!" buttonText="Save 67% Now" />
       <Header
         title={siteTitle}
         description={siteDescription}

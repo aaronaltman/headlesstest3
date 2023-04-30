@@ -8,7 +8,7 @@ import {
   NavigationMenu,
   SEO,
   Header,
-  Footer,
+  AaronFooter,
   Posts,
   Testimonials, AaronHero, AaronBanner,AaronPosts,
 } from 'components';
@@ -29,7 +29,6 @@ export default function Component() {
   const { title: siteTitle, description: siteDescription } =
       data?.generalSettings;
   const primaryMenu = data?.headerMenuItems?.nodes ?? [];
-  const footerMenu = data?.footerMenuItems?.nodes ?? [];
 
   return (
       <>
@@ -72,7 +71,7 @@ export default function Component() {
             </section>
           </div>
         </Main>
-        <Footer menuItems={footerMenu} />
+        <AaronFooter />
       </>
   );
 }
@@ -80,7 +79,6 @@ export default function Component() {
 Component.variables = () => {
   return {
     headerLocation: MENUS.PRIMARY_LOCATION,
-    footerLocation: MENUS.FOOTER_LOCATION,
     first: postsPerPage,
   };
 };
@@ -92,7 +90,6 @@ Component.query = gql`
   ${Testimonials.fragments.entry}
   query GetPageData(
     $headerLocation: MenuLocationEnum
-    $footerLocation: MenuLocationEnum
     $first: Int
   ) {
     posts(first: $first) {
@@ -109,11 +106,6 @@ Component.query = gql`
       ...BlogInfoFragment
     }
     headerMenuItems: menuItems(where: { location: $headerLocation }) {
-      nodes {
-        ...NavigationMenuItemFragment
-      }
-    }
-    footerMenuItems: menuItems(where: { location: $footerLocation }) {
       nodes {
         ...NavigationMenuItemFragment
       }

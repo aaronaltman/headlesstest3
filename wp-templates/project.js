@@ -10,7 +10,7 @@ import {
   NavigationMenu,
   FeaturedImage,
   Main,
-  SEO,
+  SEO, AaronBanner,
 } from 'components';
 import { BlogInfoFragment } from 'fragments/GeneralSettings';
 
@@ -29,6 +29,7 @@ export default function Component(props) {
         title={`${title} - ${props?.data?.generalSettings?.title}`}
         imageUrl={featuredImage?.node?.sourceUrl}
       />
+      <AaronBanner text="Shop our Spring Sale!" buttonText="Save 67% Now" />
 
       <Header menuItems={primaryMenu} />
 
