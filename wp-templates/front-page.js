@@ -110,11 +110,11 @@ Component.query = gql`
       }
     }
     uncategorizedPosts: posts(where: { categoryName: $uncategorizedCategory }, first: $first) {
-      nodes
+      nodes {
         ...PostsItemFragment
       }
     }
-    testimonials {
+    testimonials: testimonials {
       nodes {
         ...TestimonialsFragment
       }
@@ -134,3 +134,4 @@ Component.query = gql`
     }
   }
 `;
+
