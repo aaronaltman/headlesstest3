@@ -1,51 +1,48 @@
+// Import variables
 @import "styles/_Variables.scss";
 
+// Set the container width
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 5rem;
   width: 100%;
-  background-color: #e5eaf5;
+}
 
-  .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 1rem;
-  }
+// Set the column widths
+.column1,
+.column2,
+.column3,
+.column4,
+.column5 {
+  flex: 25%;
+}
 
-  .logo {
-    display: flex;
-    align-items: center;
-    img {
-      max-height: 50px;
-    }
-  }
-
-  .column {
-    padding: 2rem;
-
-    &:nth-child(-n+4) {
-      align-self: flex-start;
-    }
-
-    @media screen and (max-width: $breakpoint-medium) {
-      flex-wrap: nowrap;
-    }
-
-    @media screen and (max-width: $breakpoint-small) {
-      flex-direction: column;
-    }
+// Make the columns responsive
+@media (max-width: $breakpoint-medium) {
+  .column1,
+  .column2,
+  .column3,
+  .column4,
+  .column5 {
+    flex: 100%;
   }
 }
 
+// Add some spacing around the elements in the footer
+.container {
+  padding: 2rem;
+}
+
+// Style the logo
+.logo {
+  max-height: 50px;
+}
+
+// Style the h2 elements
 .local_h2 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
+// Style the ul elements
 .local_ul {
   list-style: none;
   padding: 0;
@@ -53,7 +50,7 @@
   font-size: 1.5rem;
   line-height: 1.5;
 
-  .local_li {
+  li {
     margin-bottom: 0.5rem;
   }
 }
