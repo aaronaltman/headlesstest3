@@ -7,26 +7,23 @@
   margin: 0 auto;
   padding: 2rem;
   background-color: gray;
+  display:flex;
+  flex-direction:row;
 }
 .column1{
   flex-basis:20%;
-  justify-content: center;
 }
 .column2{
   flex-basis:20%;
-  justify-content: center;
 }
 .column3{
   flex-basis:20%;
-  justify-content: center;
 }
 .column4{
   flex-basis:20%;
-  justify-content: center;
 }
 .column5{
   flex-basis:20%;
-  justify-content: center;
 }
 
 .local_h2{
@@ -38,6 +35,10 @@
 
 .local_ul{
   text-decoration: none;
+}
+.logo{
+  width:300px;
+  height:96px;
 }
 
 
