@@ -41,7 +41,7 @@ export default function Component() {
             menuItems={primaryMenu}
         />
         <AaronHero />
-        <Main className={styles.home} style={{ paddingTop: '40px', paddingBottom:'40px' }}>
+        <Main className={styles.home} style={{ paddingTop: '40px' }}>
           <div className="container">
             <section className="hero text-center">
               <Heading className={styles.heading} level="h1">
