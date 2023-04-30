@@ -4,9 +4,12 @@
 // Set the container width
 .container {
   width: 100%;
-
   // Add some spacing around the elements in the footer
   padding: 2rem;
+  // Style the logo
+  .logo {
+    max-height: 50px;
+  }
 }
 
 // Set the column widths
@@ -19,11 +22,6 @@
   .column1, .column2, .column3, .column4, .column5 {
     flex: 100%;
   }
-}
-
-// Style the logo
-.logo {
-  max-height: 50px;
 }
 
 // Style the h2 elements
