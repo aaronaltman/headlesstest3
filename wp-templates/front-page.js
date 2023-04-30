@@ -10,7 +10,7 @@ import {
   Header,
   Footer,
   Posts,
-  Testimonials, AaronHero, AaronBanner,
+  Testimonials, AaronHero, AaronBanner,AaronPosts,
 } from 'components';
 import { BlogInfoFragment } from 'fragments/GeneralSettings';
 
@@ -65,7 +65,7 @@ export default function Component() {
               <Heading className={styles.heading} level="h2">
                 More Posts
               </Heading>
-              <Posts posts={data.posts?.nodes} id="posts-list" />
+              <AaronPosts categoryId="dGVybTo1" />
             </section>
             <section>
               <Heading className={styles.heading} level="h1">
