@@ -63,7 +63,7 @@ export default function Component() {
             </section>
             <section className={styles.posts}>
               <Heading className={styles.heading} level="h2">
-                More POsts
+                More Posts
               </Heading>
               <Posts posts={data.posts?.nodes} id="posts-list" />
             </section>
