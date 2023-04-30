@@ -10,9 +10,7 @@ import {
   Header,
   Footer,
   Posts,
-  Testimonials,
-  AaronHero,
-  AaronBanner,
+  Testimonials, AaronHero, AaronBanner,
 } from 'components';
 import { BlogInfoFragment } from 'fragments/GeneralSettings';
 
@@ -61,13 +59,13 @@ export default function Component() {
               <Heading className={styles.heading} level="h2">
                 OBD2 Codes
               </Heading>
-              <Posts id="posts-list" posts={data?.obd2Posts?.nodes ?? []} />
+              <Posts posts={data.posts?.nodes} id="posts-list" />
             </section>
             <section className={styles.posts}>
               <Heading className={styles.heading} level="h2">
-                Uncategorized
+                More POsts
               </Heading>
-              <Posts id="posts-list" posts={data?.uncategorizedPosts?.nodes ?? []} />
+              <Posts posts={data.posts?.nodes} id="posts-list" />
             </section>
             <section>
               <Heading className={styles.heading} level="h1">
@@ -87,8 +85,6 @@ Component.variables = () => {
     headerLocation: MENUS.PRIMARY_LOCATION,
     footerLocation: MENUS.FOOTER_LOCATION,
     first: postsPerPage,
-    obd2Category: "OBD2 Codes",
-    uncategorizedCategory: "Uncategorized",
   };
 };
 
@@ -101,20 +97,13 @@ Component.query = gql`
     $headerLocation: MenuLocationEnum
     $footerLocation: MenuLocationEnum
     $first: Int
-    $obd2Category: String
-    $uncategorizedCategory: String
   ) {
-    obd2Posts: posts(where: { categoryName: $obd2Category }, first: $first) {
+    posts(first: $first) {
       nodes {
         ...PostsItemFragment
       }
     }
-    uncategorizedPosts: posts(where: { categoryName: $uncategorizedCategory }, first: $first) {
-      nodes {
-        ...PostsItemFragment
-      }
-    }
-    testimonials: testimonials {
+    testimonials {
       nodes {
         ...TestimonialsFragment
       }
@@ -134,4 +123,3 @@ Component.query = gql`
     }
   }
 `;
-

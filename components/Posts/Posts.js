@@ -1,5 +1,5 @@
 import React from 'react';
-import { gql, useQuery } from '@apollo/client';
+import { gql } from '@apollo/client';
 import classNames from 'classnames/bind';
 import Link from 'next/link';
 import { FeaturedImage } from 'components';
@@ -9,17 +9,9 @@ import useFocusFirstNewResult from 'hooks/useFocusFirstNewResult';
 import styles from './Posts.module.scss';
 let cx = classNames.bind(styles);
 
-function Posts({ category, intro, id }) {
-    const { loading, error, data } = useQuery(Posts.fragments.entry, {
-        variables: { category },
-    });
-
-    const { firstNewResultRef, firstNewResultIndex } = useFocusFirstNewResult(data?.posts?.edges);
-
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>Error: {error.message}</p>;
-
-    const posts = data.posts.edges.map(edge => edge.node);
+function Posts({ posts, intro, id }) {
+    const { firstNewResultRef, firstNewResultIndex } =
+        useFocusFirstNewResult(posts);
 
     return (
         <section {...(id && { id })}>
@@ -70,38 +62,20 @@ function Posts({ category, intro, id }) {
 
 Posts.fragments = {
     entry: gql`
-        ${FeaturedImage.fragments.entry}
-        query Posts($category: String) {
-            posts(where: { categoryName: $category }) {
-                edges {
-                    node {
-                        id
-                        date
-                        uri
-                        title
-                        author {
-                            node {
-                                name
-                            }
-                        }
-                        ...FeaturedImageFragment
-                    }
-                }
-            }
+    ${FeaturedImage.fragments.entry}
+    fragment PostsItemFragment on Post {
+      id
+      date
+      uri
+      title
+      author {
+        node {
+          name
         }
-        fragment PostsItemFragment on Post {
-            id
-            date
-            uri
-            title
-            author {
-                node {
-                    name
-                }
-            }
-            ...FeaturedImageFragment
-        }
-    `,
+      }
+      ...FeaturedImageFragment
+    }
+  `,
 };
 
 export default Posts;
