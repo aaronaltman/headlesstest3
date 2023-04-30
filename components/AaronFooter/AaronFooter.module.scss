@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 2rem 2rem;
+  padding: 4rem 4rem;
   background-color: #e5eaf5;
   color: #222;
 
@@ -14,37 +14,30 @@
   }
 }
 
-.column1,
+.column1 {
+  flex-basis: 25%;
+  margin: .4rem;
+}
+
 .column2,
 .column3,
 .column4,
 .column5 {
-  flex: 1;
+  flex-basis: calc(75% / 4);
   margin: .4rem;
+}
 
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-
-    li {
-      margin-bottom: 0.5rem;
-    }
-  }
-
-  p {
-    margin-bottom: 0.5rem;
-  }
-
-  @media (max-width: $breakpoint-small) {
+@media (max-width: $breakpoint-small) {
+  .column1,
+  .column2,
+  .column3,
+  .column4,
+  .column5 {
     flex-basis: 100%;
     margin: 1rem 0;
   }
 }
+
 
 .logo {
   a {
