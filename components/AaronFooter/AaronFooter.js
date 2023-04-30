@@ -27,7 +27,7 @@ function AaronFooter() {
                 </div>
             </div>
             <div className={styles.column2}>
-                <h2>About</h2>
+                <h2 className={styles.local_h2}>About</h2>
                 <ul>
                     <li>About FIXD</li>
                     <li>Careers</li>
@@ -36,7 +36,7 @@ function AaronFooter() {
                 </ul>
             </div>
             <div className={styles.column3}>
-                <h2>Contact Us</h2>
+                <h2 className={styles.local_h2}>Contact Us</h2>
                 <ul>
                 <li>(925) 854-1766</li>
                 <li>support@fixdapp.com</li>
@@ -44,7 +44,7 @@ function AaronFooter() {
                 </ul>
             </div>
             <div className={styles.column4}>
-                <h2>Help</h2>
+                <h2 className={styles.local_h2}>Help</h2>
                 <ul>
                     <li>Help Center</li>
                     <li>Contact Support</li>
@@ -54,7 +54,7 @@ function AaronFooter() {
                 </ul>
             </div>
             <div className={styles.column5}>
-                <h2>Legal</h2>
+                <h2 className={styles.local_h2}>Legal</h2>
                 <ul>
                     <li>Terms of Use</li>
                     <li>Privacy Policy</li>
