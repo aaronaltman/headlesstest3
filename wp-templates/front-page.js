@@ -61,6 +61,12 @@ export default function Component() {
               </Heading>
               <Posts id="posts-list" category="OBD2 Codes" />
             </section>
+            <section className={styles.posts}>
+              <Heading className={styles.heading} level="h2">
+                Uncategorized
+              </Heading>
+              <Posts id="posts-list" category="Uncategorized" />
+            </section>
             <section>
               <Heading className={styles.heading} level="h1">
                 As Seen On
