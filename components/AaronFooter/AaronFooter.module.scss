@@ -3,8 +3,8 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 1rem 1rem;
+  justify-content: space-evenly;
+  padding: 2rem 2rem;
   background-color: #e5eaf5;
   color: #222;
 
@@ -23,8 +23,8 @@
   margin: .4rem;
 
   h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   ul {
@@ -59,7 +59,7 @@
   position: relative;
 
   .logo {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
