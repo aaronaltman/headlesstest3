@@ -10,18 +10,20 @@ function AaronFooter() {
     return (
         <div className={styles.container}>
             <div className={styles.column1}>
-                <div className={cx('logo')}>
-                    <Link href="/">
-                        <a title="Home">
-                            <Image
-                                src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/fixdapp-logo.webp"
-                                width={300}
-                                height={96}
-                                alt="FixdappLogo"
-                                layout="responsive"
-                            />
-                        </a>
-                    </Link>
+                <div className={cx('logo-container')}>
+                    <div className={cx('logo')}>
+                        <Link href="/">
+                            <a title="Home">
+                                <Image
+                                    src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/fixdapp-logo.webp"
+                                    width={300}
+                                    height={96}
+                                    alt="FixdappLogo"
+                                    layout="responsive"
+                                />
+                            </a>
+                        </Link>
+                    </div>
                 </div>
             </div>
             <div className={styles.column2}>
