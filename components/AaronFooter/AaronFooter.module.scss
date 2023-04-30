@@ -21,6 +21,7 @@
 @media (max-width: $breakpoint-medium) {
   .column1, .column2, .column3, .column4, .column5 {
     flex: 100%;
+    flex-direction: column;
   }
 }
 
