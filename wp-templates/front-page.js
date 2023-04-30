@@ -59,7 +59,7 @@ export default function Component() {
               <Heading className={styles.heading} level="h2">
                 OBD2 Codes
               </Heading>
-              <Posts posts={data.posts?.nodes} id="posts-list" />
+              <Posts id="posts-list" category="OBD2 Codes" />
             </section>
             <section>
               <Heading className={styles.heading} level="h1">
