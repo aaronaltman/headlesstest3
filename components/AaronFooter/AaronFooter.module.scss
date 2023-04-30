@@ -10,35 +10,33 @@
 
   .logo-container {
     display: flex;
-    justify-content: center; /* align logo to center */
-    align-items: center; /* align logo to center */
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding-bottom: 1rem;
   }
 
   .logo {
     display: flex;
-    align-items: center; /* align logo to center */
+    align-items: center;
     img {
-      max-height: 50px; /* adjust max height of logo image */
+      max-height: 50px;
     }
   }
 
   .column {
     padding: 2rem;
 
-    &:nth-child(-n+4) { /* align first four columns to left */
+    &:nth-child(-n+4) {
       align-self: flex-start;
     }
 
-    flex: 0 0 18.75%; /* remove individual flex values from child columns */
-
     @media screen and (max-width: $breakpoint-medium) {
-      flex: 0 0 50%;
+      flex-wrap: nowrap;
     }
 
     @media screen and (max-width: $breakpoint-small) {
-      flex: 0 0 100%;
+      flex-direction: column;
     }
   }
 }
