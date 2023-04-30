@@ -62,9 +62,6 @@ export default function Component() {
               <Posts posts={data.posts?.nodes} id="posts-list" />
             </section>
             <section className={styles.posts}>
-              <Heading className={styles.heading} level="h2">
-                More Posts
-              </Heading>
               <AaronPosts categoryId="dGVybTo1" />
             </section>
             <section>
