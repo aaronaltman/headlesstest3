@@ -1,34 +1,26 @@
 import React from 'react';
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import { styled } from '@mui/system'; // import styled from @mui/system
 import 'components/AaronFooter/AaronFooter.module.scss';
+import Grid from '@mui/material/Grid';
 
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
 
 const AaronFooter = () => {
     return (
         <div className={'localcontainer'}>
             <Grid container spacing={2}>
                 <Grid item xs={4}>
-                    <Item>xs</Item>
+                    <p>xs</p>
                 </Grid>
                 <Grid item xs={2}>
-                    <Item>xs=6</Item>
+                    <p>xs=6</p>
                 </Grid>
                 <Grid item xs={2}>
-                    <Item>xs</Item>
+                    <p>xs</p>
                 </Grid>
                 <Grid item xs={2}>
-                    <Item>xs</Item>
+                    <p>xs</p>
                 </Grid>
                 <Grid item xs={2}>
-                    <Item>xs</Item>
+                    <p>xs</p>
                 </Grid>
             </Grid>
         </div>
