@@ -15,7 +15,6 @@ import {
 import { BlogInfoFragment } from 'fragments/GeneralSettings';
 
 import AaronLogoGrid from "../components/AaronLogoGrid";
-import FixdAppFooter from "../components/FixdappFooter";
 
 const postsPerPage = 6;
 
@@ -80,7 +79,6 @@ export default function Component() {
           </div>
         </Main>
         <AaronFooter />
-        <FixdAppFooter />
       </>
   );
 }
