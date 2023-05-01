@@ -1,59 +1,62 @@
 import React from 'react';
-import { CFooter, CContainer, CRow, CCol, CImage, CListGroup, CListGroupItem } from '@coreui/react';
-import '@coreui/coreui/dist/css/coreui.min.css';
-import 'components/FixdappFooter/FixdAppFooter.module.scss'; // Import the CSS file
+import 'components/FixdappFooter/AaronFooter.js';
+import Image from "next/image"; // Import the CSS file
+import styles from 'components/FixdappFooter/FixdAppFooter.module.scss';
 
 function AaronFooter() {
     return (
-        <CFooter className="py-5 bg-light" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
-            <CContainer>
-                <CRow className="custom-row">
-                    <CCol className="logo-col">
-                        <CImage
-                            fluid
-                            src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/fixdapp-logo.webp"
-                            style={{ width: '80%', float: 'left' }}
-                        />
-                    </CCol>
-                    <CCol className="content-col">
-                        <h2 style={{ fontSize: '20px' }}>ABOUT</h2>
-                        <CListGroup flush>
-                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>About FIXD</CListGroupItem>
-                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Careers</CListGroupItem>
-                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Press</CListGroupItem>
-                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Reviews</CListGroupItem>
-                        </CListGroup>
-                    </CCol>
-                    <CCol className="content-col">
-                        <h2 style={{ fontSize: '20px' }}>CONTACT US</h2>
-                        <CListGroup flush className="bg-light">
-                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>(925) 854-1766</CListGroupItem>
-                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>support@fixdapp.com</CListGroupItem>
-                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>999 Peachtree St NE Suite 840, Atlanta, GA 30309</CListGroupItem>
-                        </CListGroup>
-                    </CCol>
-                    <CCol className="content-col">
-                        <h2 style={{ fontSize: '20px' }}>HELP</h2>
-                        <CListGroup flush>
-                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Help Center</CListGroupItem>
-                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Contact Support</CListGroupItem>
-                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>FIXD app and sensor FAQ</CListGroupItem>
-                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Returns and warranty</CListGroupItem>
-                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Manage subscription</CListGroupItem>
-                        </CListGroup>
-                    </CCol>
-                    <CCol className="content-col">
-                        <h2 style={{ fontSize: '20px' }}>LEGAL</h2>
-                        <CListGroup flush>
-                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Terms of Use</CListGroupItem>
-                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Privacy Policy</CListGroupItem>
-                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Advertising Disclosure</CListGroupItem>
-                    </CListGroup>
-                </CCol>
-            </CRow>
-        </CContainer>
-</CFooter>
-);
+        <div className={styles.footer}>
+            <div className={styles.container}>
+                <div className={styles.row}>
+                    <div className={styles.col1}>
+                        <div className={styles.imageWrapper}>
+                            <Image
+                                src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/phones-app-transparent-large.webp"
+                                alt="Fixdapp way of fixing cars"
+                                width={972}
+                                height={874}
+                            />
+                        </div>
+                    </div>
+                    <div className={styles.col2}>
+                        <h2 className={styles.localh2}>ABOUT</h2>
+                        <ul className={styles.localul}>
+                            <li>About FIXD</li>
+                            <li>Careers</li>
+                            <li>Press</li>
+                            <li>Reviews</li>
+                        </ul>
+                    </div>
+                    <div className={styles.col3}>
+                        <h2 className={styles.localh2}>CONTACT US</h2>
+                        <ul className={styles.localul}>
+                            <li>(925) 854-1766</li>
+                            <li>support@fixdapp.com</li>
+                            <li>999 Peachtree St NE Suite 840, Atlanta, GA 30309</li>
+                        </ul>
+                    </div>
+                    <div className={styles.col4}>
+                        <h2 className={styles.localh2}>HELP</h2>
+                        <ul className={styles.localul}>
+                            <li>Help Center</li>
+                            <li>Contact Support</li>
+                            <li>FIXD app and sensor FAQ</li>
+                            <li>Returns and warranty</li>
+                            <li>Manage subscription</li>
+                        </ul>
+                    </div>
+                    <div className={styles.col5}>
+                        <h2 className={styles.localh2}>LEGAL</h2>
+                        <ul className={styles.localul}>
+                            <li>Terms of Use</li>
+                            <li>Privacy Policy</li>
+                            <li>Advertising Disclosure</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default AaronFooter;

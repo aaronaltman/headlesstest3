@@ -1,20 +1,74 @@
-.custom-row {
+@import 'styles/Variables';
+
+.footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
+  padding: 2% 0;
+  background-color: #e5eaf4;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .col1 {
+      flex: 1;
+      padding: 0 15px;
+      align-content: flex-start;
+
+      .imageWrapper {
+        width: 100%;
+        height: 100%; // Change height to 100% for full size
+        img {
+          object-fit: cover; // Add this line to maintain image aspect ratio
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .col2,
+    .col3,
+    .col4,
+    .col5 {
+      flex: 1;
+      padding: 0 15px;
+      box-sizing: border-box;
+      align-content: center;
+      align-items: center;
+      margin-top: 5%;
+
+      .localh2 {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+
+      .localul {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
 
-.logo-col {
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-
-.content-col {
-  flex: 1;
-}
-
-@media (max-width: 767.98px) {
-  .content-col {
-    margin-top: 20px;
+@media (max-width: $breakpoint-small) {
+  .footer {
+    .row {
+      .col1,
+      .col2,
+      .col3,
+      .col4,
+      .col5 {
+        flex: 100%;
+        margin-bottom: 20px;
+      }
+    }
   }
 }
