@@ -15,7 +15,7 @@ function AaronFooter() {
                         />
                     </CCol>
                     <CCol flex="1">
-                        <h2>ABOUT</h2>
+                        <h2 style={{ fontSize: '20px' }}>ABOUT</h2>
                         <CListGroup flush>
                             <CListGroupItem>About FIXD</CListGroupItem>
                             <CListGroupItem>Careers</CListGroupItem>
@@ -24,7 +24,7 @@ function AaronFooter() {
                         </CListGroup>
                     </CCol>
                     <CCol flex="1">
-                        <h2>CONTACT US</h2>
+                        <h2 style={{ fontSize: '20px' }}>CONTACT US</h2>
                         <CListGroup flush className="bg-light">
                             <CListGroupItem>(925) 854-1766</CListGroupItem>
                             <CListGroupItem>support@fixdapp.com</CListGroupItem>
@@ -32,7 +32,7 @@ function AaronFooter() {
                         </CListGroup>
                     </CCol>
                     <CCol flex="1">
-                        <h2>HELP</h2>
+                        <h2 style={{ fontSize: '20px' }}>HELP</h2>
                         <CListGroup flush>
                             <CListGroupItem>Help Center</CListGroupItem>
                             <CListGroupItem>Contact Support</CListGroupItem>
@@ -42,7 +42,7 @@ function AaronFooter() {
                         </CListGroup>
                     </CCol>
                     <CCol flex="1">
-                        <h2>LEGAL</h2>
+                        <h2 style={{ fontSize: '20px' }}>LEGAL</h2>
                         <CListGroup flush>
                             <CListGroupItem>Terms of Use</CListGroupItem>
                             <CListGroupItem>Privacy Policy</CListGroupItem>
