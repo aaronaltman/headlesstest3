@@ -4,7 +4,7 @@ import '@coreui/coreui/dist/css/coreui.min.css';
 
 function AaronFooter() {
     return (
-        <CFooter>
+        <CFooter className="py-4">
             <CContainer>
                 <CRow>
                     <CCol col="12" md="3" className="mb-3 mb-md-0">
@@ -20,3 +20,4 @@ function AaronFooter() {
 }
 
 export default AaronFooter;
+
