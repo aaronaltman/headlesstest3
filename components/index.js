@@ -3,7 +3,6 @@ import AaronHero from 'components/AaronHero/AaronHero.js';
 import AaronBanner from '/components/AaronBanner/AaronBanner.js';
 
 import AaronPosts from 'components/AaronPosts/AaronPosts.js';
-import AaronFooter from 'components/AaronFooter/AaronFooter.js';
 import FixdAppFooter from 'components/FixdappFooter/FixdAppFooter.js';
 
 import AaronLogoGrid from "./AaronLogoGrid";
@@ -36,7 +35,6 @@ import SearchRecommendations from './SearchRecommendations';
 
 export {
   FixdAppFooter,
-  AaronFooter,
   AaronPosts,
   AaronLogoGrid,
   AaronHero,
