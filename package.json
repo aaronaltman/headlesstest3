@@ -22,6 +22,7 @@
     "@faustwp/cli": "0.2.10",
     "@faustwp/core": "0.2.11",
     "@mui/material": "^5.12.2",
+    "@mui/system": "^5.12.1",
     "classnames": "^2.3.1",
     "eslint-plugin-mui": "^0.1.1",
     "graphql": "^16.6.0",

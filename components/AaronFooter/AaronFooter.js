@@ -1,26 +1,37 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import { styled } from '@mui/system'; // import styled from @mui/system
 import 'components/AaronFooter/AaronFooter.module.scss';
 
+const Item = styled(Paper)(({ theme }) => ({
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+}));
 const AaronFooter = () => {
     return (
-        <Grid container style={{ width: 1200 }}>
-            <Grid item xs={3} style={{ backgroundColor: 'red', height: 100 }}>
-                Column 1
+        <div className={'localcontainer'}>
+        <Grid container spacing={2}>
+            <Grid item xs={4}>
+                <Item>xs</Item>
             </Grid>
-            <Grid item xs={3} style={{ backgroundColor: 'blue', height: 100 }}>
-                Column 2
+            <Grid item xs={2}>
+                <Item>xs=6</Item>
             </Grid>
-            <Grid item xs={3} style={{ backgroundColor: 'green', height: 100 }}>
-                Column 3
+            <Grid item xs={2}>
+                <Item>xs</Item>
             </Grid>
-            <Grid item xs={3} style={{ backgroundColor: 'orange', height: 100 }}>
-                Column 4
+            <Grid item xs={2}>
+                <Item>xs</Item>
             </Grid>
-            <Grid item xs={12} style={{ backgroundColor: 'pink', height: 100 }}>
-                Column 5
+            <Grid item xs={2}>
+                <Item>xs</Item>
             </Grid>
         </Grid>
+        </div>
     );
 };
 
