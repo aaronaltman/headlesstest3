@@ -1,101 +1,59 @@
-import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Unstable_Grid2';
-import Image from 'next/image';
+import React from 'react';
+import { CFooter, CContainer, CRow, CCol, CImage, CListGroup, CListGroupItem } from '@coreui/react';
+import '@coreui/coreui/dist/css/coreui.min.css';
+import 'components/FixdappFooter/FixdAppFooter.module.scss'; // Import the CSS file
 
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
-
-function FixdAppFooter() {
+function AaronFooter() {
     return (
-        <Box component="footer" sx={{ flexGrow: 1 }}>
-            <Grid container spacing={2}>
-                <Grid xs={12} md={5} lg={4}>
-                    <Item>
-                        <Image
-                            src="https://www.fixdapp.com/wp-content/themes/fixd2.0/assets/images/fixd-logo-white.svg"
-                            alt="Fixd Logo"
-                            width={160}
-                            height={48}
-                            layout="responsive"
+        <CFooter className="py-5 bg-light" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
+            <CContainer>
+                <CRow className="custom-row">
+                    <CCol className="logo-col">
+                        <CImage
+                            fluid
+                            src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/fixdapp-logo.webp"
+                            style={{ width: '80%', float: 'left' }}
                         />
-                    </Item>
-                </Grid>
-                <Grid container xs={12} md={7} lg={8} spacing={4}>
-                    <Grid xs={6} lg={3}>
-                        <Item>
-                            <Box
-                                id="about"
-                                sx={{ fontSize: '12px', textTransform: 'uppercase' }}
-                            >
-                                About
-                            </Box>
-                            <Box component="ul" aria-labelledby="about" sx={{ pl: 2 }}>
-                                <li>About FIXD</li>
-                                <li>Careers</li>
-                                <li>Press</li>
-                                <li>Reviews</li>
-                            </Box>
-                        </Item>
-                    </Grid>
-                    <Grid xs={6} lg={3}>
-                        <Item>
-                            <Box
-                                id="contact-us"
-                                sx={{ fontSize: '12px', textTransform: 'uppercase' }}
-                            >
-                                Contact Us
-                            </Box>
-                            <Box component="ul" aria-labelledby="contact-us" sx={{ pl: 2 }}>
-                                <li>(888) 917-8817</li>
-                                <li>support@fixdapp.com</li>
-                                <li>120 Ottley Dr NE, Suite 100, Atlanta, GA 30324</li>
-                            </Box>
-                        </Item>
-                    </Grid>
-                    <Grid xs={6} lg={3}>
-                        <Item>
-                            <Box
-                                id="help"
-                                sx={{ fontSize: '12px', textTransform: 'uppercase' }}
-                            >
-                                Help
-                            </Box>
-                            <Box component="ul" aria-labelledby="help" sx={{ pl: 2 }}>
-                                <li>Help Center</li>
-                                <li>Contact Support</li>
-                                <li>FIXD App & Sensor FAQ</li>
-                                <li>Returns & Warranty</li>
-                                <li>Manage Subscription</li>
-                            </Box>
-                        </Item>
-                    </Grid>
-                    <Grid xs={6} lg={3}>
-                        <Item>
-                            <Box
-                                id="legal"
-                                sx={{ fontSize: '12px', textTransform: 'uppercase' }}
-                            >
-                                Legal
-                            </Box>
-                            <Box component="ul" aria-labelledby="legal" sx={{ pl: 2 }}>
-                                <li>Terms of Use</li>
-                                <li>Privacy Policy</li>
-                                <li>Advertising Disclosure</li>
-                            </Box>
-                        </Item>
-                    </Grid>
-                </Grid>
-            </Grid>
-        </Box>
-    );
+                    </CCol>
+                    <CCol className="content-col">
+                        <h2 style={{ fontSize: '20px' }}>ABOUT</h2>
+                        <CListGroup flush>
+                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>About FIXD</CListGroupItem>
+                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Careers</CListGroupItem>
+                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Press</CListGroupItem>
+                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Reviews</CListGroupItem>
+                        </CListGroup>
+                    </CCol>
+                    <CCol className="content-col">
+                        <h2 style={{ fontSize: '20px' }}>CONTACT US</h2>
+                        <CListGroup flush className="bg-light">
+                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>(925) 854-1766</CListGroupItem>
+                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>support@fixdapp.com</CListGroupItem>
+                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>999 Peachtree St NE Suite 840, Atlanta, GA 30309</CListGroupItem>
+                        </CListGroup>
+                    </CCol>
+                    <CCol className="content-col">
+                        <h2 style={{ fontSize: '20px' }}>HELP</h2>
+                        <CListGroup flush>
+                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Help Center</CListGroupItem>
+                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Contact Support</CListGroupItem>
+                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>FIXD app and sensor FAQ</CListGroupItem>
+                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Returns and warranty</CListGroupItem>
+                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Manage subscription</CListGroupItem>
+                        </CListGroup>
+                    </CCol>
+                    <CCol className="content-col">
+                        <h2 style={{ fontSize: '20px' }}>LEGAL</h2>
+                        <CListGroup flush>
+                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Terms of Use</CListGroupItem>
+                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Privacy Policy</CListGroupItem>
+                            <CListGroupItem style={{ backgroundColor: 'var(--bg-light)' }}>Advertising Disclosure</CListGroupItem>
+                    </CListGroup>
+                </CCol>
+            </CRow>
+        </CContainer>
+</CFooter>
+);
 }
 
-export default FixdAppFooter;
+export default AaronFooter;
