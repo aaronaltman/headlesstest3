@@ -1,5 +1,5 @@
 import React from 'react';
-import 'components/FixdappFooter/AaronFooter.js';
+import 'components/FixdappFooter/FixDappFooter.js';
 import Image from "next/image"; // Import the CSS file
 import styles from 'components/FixdappFooter/FixdAppFooter.module.scss';
 
