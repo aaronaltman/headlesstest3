@@ -19,11 +19,13 @@ function AaronFooter() {
                             />
                         </div>
                         <Typography variant="h6">Column 1</Typography>
-                        {/* Add content for column 1 */}
                     </Grid>
                     <Grid item xs={12} sm={6} md={3}>
-                        <Typography variant="h6">Column 2</Typography>
-                        {/* Add content for column 2 */}
+                        <Typography variant="h6">ABOUT</Typography>
+                        About FIXD
+                        Careers
+                        Press
+                        Reviews
                     </Grid>
                     <Grid item xs={12} sm={6} md={3}>
                         <Typography variant="h6">Column 3</Typography>
