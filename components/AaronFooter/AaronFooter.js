@@ -4,14 +4,13 @@ import Grid from '@mui/material/Grid';
 
 const AaronFooter = () => {
     return (
-        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
             <Paper
                 sx={{
                     p: 2,
                     flexGrow: 1,
                 }}
             >
-                <Grid container spacing={2}>
+                <Grid container spacing={2} maxWidth="md">
                     <Grid item xs={4}>
                         <p>xs</p>
                     </Grid>
@@ -29,7 +28,6 @@ const AaronFooter = () => {
                     </Grid>
                 </Grid>
             </Paper>
-        </div>
     );
 };
 
