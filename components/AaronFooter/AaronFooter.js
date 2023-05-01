@@ -17,7 +17,11 @@ function AaronFooter() {
                     <CCol md="9">
                         <CRow>
                             <CCol col="3" md="3" className="mb-3 mb-md-0">
-                                <CLink href="#">Link 1</CLink>
+                                <h2>ABOuT</h2>
+                                About FIXD
+                                Careers
+                                Press
+                                Reviews
                             </CCol>
                             <CCol col="3" md="3" className="mb-3 mb-md-0">
                                 <CLink href="#">Link 2</CLink>
