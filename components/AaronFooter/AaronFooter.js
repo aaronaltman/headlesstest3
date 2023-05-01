@@ -4,14 +4,14 @@ import '@coreui/coreui/dist/css/coreui.min.css';
 
 function AaronFooter() {
     return (
-        <CFooter className="py-5 bg-light" style={{ paddingTop: '60px', paddingBottom: '60px' }}>
+        <CFooter className="py-5 bg-light" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
             <CContainer>
                 <CRow display="flex" flex-direction="row" justify-content="space-between">
                     <CCol flex="1">
                         <CImage
                             fluid
                             src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/fixdapp-logo.webp"
-                            style={{ width: '50%', float: 'left' }}
+                            style={{ width: '90%', float: 'left' }}
                         />
                     </CCol>
                     <CCol flex="1">
