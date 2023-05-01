@@ -4,17 +4,17 @@ import '@coreui/coreui/dist/css/coreui.min.css';
 
 function AaronFooter() {
     return (
-        <CFooter className="py-4" style={{ backgroundColor: '#f5f5f5', paddingTop: '40px', paddingBottom: '40px' }}>
+        <CFooter className="py-5 bg-light" style={{ paddingTop: '60px', paddingBottom: '60px' }}>
             <CContainer>
-                <CRow>
-                    <CCol col="3" md="2">
+                <CRow display="flex" flex-direction="row" justify-content="space-between">
+                    <CCol flex="1">
                         <CImage
                             fluid
                             src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/fixdapp-logo.webp"
                             style={{ width: '50%', float: 'left' }}
                         />
                     </CCol>
-                    <CCol col="9" md="10" className="mb-3 mb-md-0">
+                    <CCol flex="1">
                         <h2>ABOUT</h2>
                         <CListGroup flush>
                             <CListGroupItem>About FIXD</CListGroupItem>
@@ -23,9 +23,7 @@ function AaronFooter() {
                             <CListGroupItem>Reviews</CListGroupItem>
                         </CListGroup>
                     </CCol>
-                </CRow>
-                <CRow>
-                    <CCol col="3" md="2">
+                    <CCol flex="1">
                         <h2>CONTACT US</h2>
                         <CListGroup flush className="bg-light">
                             <CListGroupItem>(925) 854-1766</CListGroupItem>
@@ -33,7 +31,7 @@ function AaronFooter() {
                             <CListGroupItem>999 Peachtree St NE Suite 840, Atlanta, GA 30309</CListGroupItem>
                         </CListGroup>
                     </CCol>
-                    <CCol col="3" md="2">
+                    <CCol flex="1">
                         <h2>HELP</h2>
                         <CListGroup flush>
                             <CListGroupItem>Help Center</CListGroupItem>
@@ -43,7 +41,7 @@ function AaronFooter() {
                             <CListGroupItem>Manage subscription</CListGroupItem>
                         </CListGroup>
                     </CCol>
-                    <CCol col="3" md="2">
+                    <CCol flex="1">
                         <h2>LEGAL</h2>
                         <CListGroup flush>
                             <CListGroupItem>Terms of Use</CListGroupItem>
