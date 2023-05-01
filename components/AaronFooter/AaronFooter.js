@@ -1,5 +1,5 @@
 import React from 'react';
-import { CFooter, CContainer, CRow, CCol, CImage, CLink } from '@coreui/react';
+import { CFooter, CContainer, CRow, CCol, CImage, CLink, CListGroup, CListGroupItem } from '@coreui/react';
 import '@coreui/coreui/dist/css/coreui.min.css';
 
 function AaronFooter() {
@@ -11,17 +11,20 @@ function AaronFooter() {
                         <CImage
                             fluid
                             src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/fixdapp-logo.webp"
-                            style={{ width: '50%', float: 'left' }}
+                            style={{ width: '75%', float: 'left' }}
                         />
                     </CCol>
                     <CCol md="9">
                         <CRow>
                             <CCol col="3" md="3" className="mb-3 mb-md-0">
-                                <h2>ABOuT</h2>
-                                About FIXD
-                                Careers
-                                Press
-                                Reviews
+                                <h2>ABOUT</h2>
+                                <CListGroup flush>
+                                    <CListGroupItem>Cras justo odio</CListGroupItem>
+                                    <CListGroupItem>Dapibus ac facilisis in</CListGroupItem>
+                                    <CListGroupItem>Morbi leo risus</CListGroupItem>
+                                    <CListGroupItem>Porta ac consectetur ac</CListGroupItem>
+                                    <CListGroupItem>Vestibulum at eros</CListGroupItem>
+                                </CListGroup>
                             </CCol>
                             <CCol col="3" md="3" className="mb-3 mb-md-0">
                                 <CLink href="#">Link 2</CLink>
@@ -41,5 +44,3 @@ function AaronFooter() {
 }
 
 export default AaronFooter;
-
-
