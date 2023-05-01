@@ -10,7 +10,7 @@ import {
   Header,
   AaronFooter,
   Posts,
-  Testimonials, AaronHero, AaronBanner,AaronPosts,
+  Testimonials, AaronHero, AaronBanner,AaronPosts,FixdAppFooter,
 } from 'components';
 import { BlogInfoFragment } from 'fragments/GeneralSettings';
 
@@ -79,6 +79,9 @@ export default function Component() {
           </div>
         </Main>
         <AaronFooter />
+        <div>
+        <FixdAppFooter />
+        </div>
       </>
   );
 }
