@@ -11,10 +11,10 @@ function AaronFooter() {
                     <div className={styles.col1}>
                         <div className={styles.imageWrapper}>
                             <Image
-                                src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/phones-app-transparent-large.webp"
-                                alt="Fixdapp way of fixing cars"
-                                width={972}
-                                height={874}
+                                src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/fixdapp-logo.webp"
+                                alt="logo"
+                                width={300}
+                                height={96}
                             />
                         </div>
                     </div>
