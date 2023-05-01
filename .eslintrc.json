@@ -1,5 +1,10 @@
 {
-  "extends": ["next", "eslint:recommended", "plugin:import/recommended", "prettier"],
+  "extends": [
+    "next",
+    "eslint:recommended",
+    "plugin:import/recommended",
+    "prettier"
+  ],
   "rules": {
     "import/no-unresolved": 0,
     "no-unsafe-optional-chaining": 0,
@@ -7,6 +12,22 @@
   },
   "env": {
     "es6": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    },
+    "@mui/material": {
+      "rootAlias": [
+        "@mui/material",
+        "@mui/system"
+      ]
+    }
   },
   "ignorePatterns": ["schema.generated.*"]
 }
