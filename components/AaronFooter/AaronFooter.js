@@ -1,6 +1,6 @@
 import React from 'react';
-import { CContainer, CRow, CCol, CFooter } from '@coreui/react';
-import Image from 'next/image';
+import { CFooter, CContainer, CRow, CCol, CImage } from '@coreui/react';
+import '@coreui/coreui/dist/css/coreui.min.css';
 
 function AaronFooter() {
     return (
@@ -8,13 +8,7 @@ function AaronFooter() {
             <CContainer>
                 <CRow>
                     <CCol sm="auto">
-                        <Image
-                            src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/fixdapp-logo.webp"
-                            alt="Logo"
-                            layout="responsive"
-                            width={150}
-                            height={50}
-                        />
+                        <CImage fluid src="https://bpheadlesst596.wpengine.com/wp-content/uploads/2023/04/fixdapp-logo.webp" />
                     </CCol>
                     <CCol sm="auto">Column 2</CCol>
                     <CCol sm="auto">Column 3</CCol>
